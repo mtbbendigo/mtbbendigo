@@ -1,0 +1,11 @@
+1.2
+Link fix for concrete5 when installed in a directory
+
+1.1
+Added new js to lightbox pop outs
+Fixed CDN thumbnail checking
+Fix js links providing the support for adding custom templates to the root
+
+1.0 - New custom templates
+
+0.9 - Initial Release

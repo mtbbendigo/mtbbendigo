@@ -1,0 +1,14 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+
+ 
+ h2{ font-size: 20px;
+	margin-bottom: 6px; 
+	line-height: 16px; 
+	font-family: 'museo_slab500', serif; 
+	font-weight: bold; 
+	color: $heading-color;
+}

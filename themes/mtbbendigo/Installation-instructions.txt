@@ -1,0 +1,8 @@
+Author: Gareth
+
+1. Copy themes and blocks directories
+2. Use php my admin to drop all tables
+3. Import sql file
+4. Copy and replace concrete directory
+
+The site should be good to go.

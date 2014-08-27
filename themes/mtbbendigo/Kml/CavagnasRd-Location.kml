@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Placemark>
+<name>Cavagnas Road</name>
+<description>Cavagnas Road (Johns Track)</description>
+<Point>
+<coordinates>144.33091163635254,-36.85126907689162,0</coordinates>
+</Point>
+</Placemark>
+</kml>
