@@ -28,10 +28,7 @@
 	</style>
 
   	<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>  -->
-  	
 	<script src="<?php echo $this->getThemePath() ?>/javascripts/vendor/custom.modernizr.js"></script>
-	<script src="<?php echo $this->getThemePath() ?>/javascripts/jquery.bxslider.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="<?php echo $this->getStyleSheet('stylesheets/jquery.bxslider.css')?>" />
 	
 </head>
 <body>
