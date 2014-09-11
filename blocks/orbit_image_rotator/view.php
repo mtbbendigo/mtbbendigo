@@ -2,12 +2,12 @@
 
 <?php 
 //At least one image must exist.
-//Refer to foundationzurb orbit documentation.
+//Refer to foundationzurb.com orbit documentation.
 if (!empty($field_1_image) || !empty($field_2_image) || !empty($field_3_image) || !empty($field_4_image) || !empty($field_5_image)) {
 	echo '<div class="slideshow-wrapper">';
 		echo '<div class="preloader"></div>';
 		//Begin orbit list
-		echo '<ul data-orbit>';
+		echo '<ul data-orbit data-options="animation:fade;">';//if data-options is removed orbit will slide images right to left.
 			if (!empty($field_1_image))
 			{
 				echo '<li><img src="'.$field_1_image->src. '" width="'.$field_1_image->width.'" height="'.$field_1_image->height.'" alt=""/></li>';

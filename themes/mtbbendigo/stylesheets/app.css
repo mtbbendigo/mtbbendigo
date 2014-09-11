@@ -12138,32 +12138,87 @@ textarea {
     margin-right: 3%;
   }
 }
+/* line 1204, ../sass/app.scss */
+.orbit-container .orbit-timer {
+  height: 4px;
+}
+
+/* line 1209, ../sass/app.scss */
+.orbit-container:hover .orbit-timer > span {
+  display: none;
+}
+
+@media all and (max-width: 767px) {
+  /* line 1214, ../sass/app.scss */
+  .touch {
+    display: inherit;
+  }
+  /* line 1217, ../sass/app.scss */
+  .touch .orbit-container .orbit-timer {
+    top: 3px;
+    height: 3px;
+  }
+  /* line 1220, ../sass/app.scss */
+  .touch .orbit-container .orbit-timer > span {
+    display: none;
+  }
+  /* line 1224, ../sass/app.scss */
+  .touch .orbit-container .orbit-next {
+    display: inherit;
+    margin-top: -18px;
+    width: 30px;
+    height: 45px;
+  }
+  /* line 1230, ../sass/app.scss */
+  .touch .orbit-container .orbit-prev {
+    display: inherit;
+    left: -12px;
+    margin-top: -18px;
+    width: 38px;
+    height: 45px;
+  }
+}
 @media all and (max-width: 340px) {
-  /* line 1205, ../sass/app.scss */
-  .orbit-container .orbit-next {
-    right: -3px;
+  /* line 1242, ../sass/app.scss */
+  .touch {
+    display: inherit;
+  }
+  /* line 1245, ../sass/app.scss */
+  .touch .orbit-container .orbit-timer {
+    top: 3px;
+    height: 3px;
+  }
+  /* line 1247, ../sass/app.scss */
+  .touch .orbit-container .orbit-timer > span {
+    display: none;
+  }
+  /* line 1251, ../sass/app.scss */
+  .touch .orbit-container .orbit-next {
+    display: inherit;
+    right: -1px;
     top: 50%;
-    margin-top: -35px;
+    margin-top: -19px;
     background-color: white rgba(0, 0, 0, 0.6);
-    width: 36px;
+    width: 22px;
     height: 38px;
     line-height: 50px;
     color: white;
   }
-  /* line 1215, ../sass/app.scss */
-  .orbit-container .orbit-prev {
-    left: -10px;
+  /* line 1262, ../sass/app.scss */
+  .touch .orbit-container .orbit-prev {
+    display: inherit;
+    left: -14px;
     top: 50%;
-    margin-top: -35px;
+    margin-top: -19px;
     background-color: rgba(0, 0, 0, 0.6);
-    width: 40px;
+    width: 35px;
     height: 40px;
     line-height: 50px;
     color: white;
   }
 }
 @media all and (max-width: 340px) {
-  /* line 1229, ../sass/app.scss */
+  /* line 1278, ../sass/app.scss */
   .orbit-bullets {
     margin: 0 auto 20px auto;
   }
