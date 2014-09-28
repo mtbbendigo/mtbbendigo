@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Placemark>
+    <Style id="noDrivingDirections">
+      <BalloonStyle>
+        <text><![CDATA[
+          <b>$[name]</b>
+          <br /><br />
+          $[description]
+        ]]></text>
+      </BalloonStyle>
+    </Style>
+
+<name>Koolamurt Scout Camp</name>
+<description>
+<![CDATA[<font face=verdana>44 Mandurang Rd, Spring Gully</font>]]>
+</description>
+<Point>
+<coordinates>144.2882243361724,-36.802697728010898,0</coordinates>
+</Point>
+</Placemark>
+</kml>

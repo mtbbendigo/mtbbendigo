@@ -1,0 +1,12 @@
+.settings/
+.buildpath
+.project
+config/site.php
+files/cache/*
+files/tmp/*
+cgi-bin/*
+error_log
+gte/*
+.htaccess
+mtbbendigo-test/*
+

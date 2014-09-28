@@ -1,0 +1,28 @@
+body {
+  background: white;
+  color: #222222;
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', tahoma, verdana, Arial;
+}
+
+img {border: 0px}
+a {
+	color: #ac9b5b;
+}
+a:hover {
+	/* customize_link_hover */ color: #66CC00; /* customize_link_hover */
+} 
+p { font-family: 'Open Sans', tahoma, verdana, Arial; font-weight: normal; font-size: 1.25em; line-height: 1.65em; margin-bottom: 0; }
+
+h1 { font-family: 'Oswald', 'Fjalla One', tahoma, verdana; font-size: 2.85em; margin-bottom: .5em; font-weight: normal; margin-top: 0;  line-height: 1.2em; color: #424242; display: block;}
+h2 { font-family: 'Oswald', 'Fjalla One', tahoma, verdana; font-size: 2.675em; margin-bottom: .5em; font-weight: normal; color: #424242; line-height: 1.2em; display: block; margin-top: 0;}
+h3 { font-family: 'Oswald', 'Fjalla One', tahoma, verdana; font-size: 2.475em; margin-top: 0; margin-bottom: .3em; line-height: 1.2em; font-weight: normal; color: #424242; display: block;}
+h4 { font-family: 'Oswald', 'Fjalla One', tahoma, verdana; font-size: 2.325em; margin-top: 0; margin-bottom: .2em; line-height: 1.3em; font-weight: normal; color: #424242; display: block;}
+h5 { font-family: 'Oswald', 'Fjalla One', tahoma, verdana; font-size: 2.125em; line-height: 1.1em; margin-bottom: .2em; margin-top: 0; font-weight: normal; color: #424242; display: block;}
+h6 { font-family: 'Oswald', 'Fjalla One', tahoma, verdana; font-size: 1.9em; line-height: 8px; font-weight: normal; color: #424242; display: block;}
+
+
+ul {font-family: 'Open Sans'; font-weight: normal; font-size: .82em;}
+
+hr { border: solid #00423D; border-width: 1px 0 0; clear: both; margin: .75em 0 1.5em; height: 0; }
