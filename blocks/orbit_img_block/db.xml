@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+	<table name="btDCOrbitImgBlock">
+		<field name="bID" type="I"><key /><unsigned /></field>
+
+		<field name="field_1_image_fID" type="I"></field>
+
+		<field name="field_2_textarea_text" type="X"></field>
+
+		<field name="field_3_image_fID" type="I"></field>
+
+		<field name="field_4_textarea_text" type="X"></field>
+
+		<field name="field_5_image_fID" type="I"></field>
+
+		<field name="field_6_textarea_text" type="X"></field>
+
+		<field name="field_7_image_fID" type="I"></field>
+
+		<field name="field_8_textarea_text" type="X"></field>
+
+		<field name="field_9_image_fID" type="I"></field>
+
+		<field name="field_10_textarea_text" type="X"></field>
+
+
+	</table>
+</schema>
