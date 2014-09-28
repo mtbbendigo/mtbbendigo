@@ -1,0 +1,19 @@
+img {
+    border: 0 none;
+    height: auto;
+    max-width: 99%;
+}
+
+img.circle-image-wrap ,#bootstrap_effect img.circle-image-wrap,.circle-image-wrap{
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	max-width:100%;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+@media (max-width: 480px) {
+span.mpinaps{width:94%!important;margin:0 3%!important;}
+
+}

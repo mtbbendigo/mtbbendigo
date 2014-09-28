@@ -1,0 +1,10 @@
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Placemark>
+	<name>Spring Gully Trail Network</name>
+	<description>End of Wattle Drive, Spring Gully, Vic</description>
+	<Point>
+		<coordinates>144.2853,-36.801115,0</coordinates>
+	</Point>
+</Placemark>
+</kml>
+
