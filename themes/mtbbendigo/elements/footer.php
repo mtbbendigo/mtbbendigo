@@ -54,7 +54,7 @@
 	<script src="<?php echo $this->getThemePath() ?>/javascripts/foundation/foundation.topbar.js"></script>
 	
 	<script>
-    	$(document).foundation();
+    	$(document).foundation('orbit', {animation_speed: 800, pause_on_hover: false});
   	</script>
 
 <?php  Loader::element('footer_required'); ?>
