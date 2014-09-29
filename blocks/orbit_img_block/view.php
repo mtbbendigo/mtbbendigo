@@ -14,7 +14,7 @@ if (!empty($field_1_image) || !empty($field_2_image) || !empty($field_3_image) |
 			echo '<li><img src="'.$field_1_image->src. '" width="'.$field_1_image->width.'" height="'.$field_1_image->height.'" alt=""/>';
 			if (!empty($field_2_textarea_text))
 			{
-				echo nl2br(htmlentities($field_2_textarea_text, ENT_QUOTES, APP_CHARSET));
+				echo '<div class="orbit-caption">'.nl2br(htmlentities($field_2_textarea_text, ENT_QUOTES, APP_CHARSET)).'</div>';
 			}
 			echo '</li>';
 		}
@@ -23,7 +23,7 @@ if (!empty($field_1_image) || !empty($field_2_image) || !empty($field_3_image) |
 			echo '<li><img src="'.$field_3_image->src. '" width="'.$field_3_image->width.'" height="'.$field_3_image->height.'" alt=""/>';
 			if (!empty($field_4_textarea_text))
 			{
-				echo nl2br(htmlentities($field_4_textarea_text, ENT_QUOTES, APP_CHARSET));
+				echo '<div class="orbit-caption">'.nl2br(htmlentities($field_4_textarea_text, ENT_QUOTES, APP_CHARSET)).'</div>';
 			}
 			echo '</li>';
 		}
@@ -32,7 +32,7 @@ if (!empty($field_1_image) || !empty($field_2_image) || !empty($field_3_image) |
 			echo '<li><img src="'.$field_5_image->src. '" width="'.$field_5_image->width.'" height="'.$field_5_image->height.'" alt=""/>';
 			if (!empty($field_6_textarea_text))
 			{
-				echo nl2br(htmlentities($field_6_textarea_text, ENT_QUOTES, APP_CHARSET));
+				echo '<div class="orbit-caption">'.nl2br(htmlentities($field_6_textarea_text, ENT_QUOTES, APP_CHARSET)).'</div>';
 			}
 			echo '</li>';
 		}
@@ -41,7 +41,7 @@ if (!empty($field_1_image) || !empty($field_2_image) || !empty($field_3_image) |
 			echo '<li><img src="'.$field_7_image->src. '" width="'.$field_7_image->width.'" height="'.$field_7_image->height.'" alt=""/>';
 			if (!empty($field_8_textarea_text))
 			{
-				echo nl2br(htmlentities($field_8_textarea_text, ENT_QUOTES, APP_CHARSET));
+				echo '<div class="orbit-caption">'.nl2br(htmlentities($field_8_textarea_text, ENT_QUOTES, APP_CHARSET)).'</div>';
 			}
 			echo '</li>';
 		}
@@ -50,7 +50,7 @@ if (!empty($field_1_image) || !empty($field_2_image) || !empty($field_3_image) |
 			echo '<li><img src="'.$field_9_image->src. '" width="'.$field_9_image->width.'" height="'.$field_9_image->height.'" alt=""/>';
 			if (!empty($field_10_textarea_text))
 			{
-				echo nl2br(htmlentities($field_10_textarea_text, ENT_QUOTES, APP_CHARSET));
+				echo '<div class="orbit-caption">'.nl2br(htmlentities($field_10_textarea_text, ENT_QUOTES, APP_CHARSET)).'</div>';
 			}
 			echo '</li>';
 		}
