@@ -721,6 +721,7 @@ textarea {
 }
 .article-item-text {
 	margin-bottom: 1.25em;
+	a {font-weight: bold;}
 }
 .article-title {
 
@@ -1112,7 +1113,7 @@ textarea {
 }
 
 .para-container {
-	//padding-top: 1em;
+	p a {font-weight: bold;}
 }
 
 @media all and (max-width: $tiny-screen) {
