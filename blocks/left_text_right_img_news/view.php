@@ -45,7 +45,7 @@ $nh = Loader::helper('navigation');
 					<?php  if (!empty($field_4_image_internalLinkCID)) { ?></a><?php  } ?>
 				<?php echo '</div>';?>
 			<?php  endif; ?>
-		<?php echo '</div>';?>		
+				
 		</div>
 	</div>
 </article>
