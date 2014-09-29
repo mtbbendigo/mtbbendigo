@@ -1189,7 +1189,8 @@ textarea {
 		background-color: #fff;
 		.orbit-timer { > span{border: solid 6px #fff;} .orbit-progress{background-color: #fff;}}
 		.orbit-timer.paused > span {border-color: transparent transparent transparent #fff;}
-		
+		.orbit-slides-container > * .orbit-caption { width: 99.3%; }
+		.orbit-next {margin-right: .65%;}	
 	}
 }
 
@@ -1234,6 +1235,8 @@ textarea {
 				width: 38px;
 				height: 45px;
 			}
+			.orbit-slides-container > * .orbit-caption { width: 100%; }
+			.orbit-next {margin-right: 0;}
 		}
 	}
 }
@@ -1270,6 +1273,7 @@ textarea {
 			line-height: 50px;
 			color: white;
 		}
+		.orbit-caption {padding: 2px 14px;}
 	}
 }
 }
