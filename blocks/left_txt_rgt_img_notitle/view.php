@@ -6,7 +6,9 @@ $nh = Loader::helper('navigation');
 	<div class="row">
 		<div class="large-8 columns">
 			<?php  if (!empty($field_1_wysiwyg_content)): ?>
-				<?php  echo $field_1_wysiwyg_content; ?>
+				<?php echo'<div class="article-item-text">';?>
+					<?php  echo $field_1_wysiwyg_content; ?>
+				<?php echo'</div>';?>
 			<?php  endif; ?>
 		</div>
 		<div class="large-4 columns">
