@@ -9,4 +9,5 @@ error_log
 gte/*
 .htaccess
 mtbbendigo-test/*
-themes/mtbbendigo/.sass-cache/**
+.sass-cache
+.sass-cache/*
