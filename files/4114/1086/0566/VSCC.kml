@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Placemark>
+<name>VSCC Start</name>
+<description>Victorian schools cycling champs start finish.</description>
+<Point>
+<coordinates>144.2852121591568,-36.803589403765294,0</coordinates>
+</Point>
+</Placemark>
+</kml>
