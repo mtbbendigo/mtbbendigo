@@ -120,5 +120,6 @@ $files = $controller->getFileSet();
 
 <?php   if (empty($files) && $noFilesMessage) { ?>
 <p><?php   echo $noFilesMessage; ?></p>
-</div>
+
 <?php   } ?>
+</div>
