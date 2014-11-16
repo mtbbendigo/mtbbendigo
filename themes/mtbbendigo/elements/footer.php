@@ -44,7 +44,7 @@
         echo('<script src="'.$this->getThemePath().'/javascripts/foundation/foundation.js"></script>');
         echo('<script src="'.$this->getThemePath().'/javascripts/foundation/foundation.orbit.js"></script>');
         echo('<script src="'.$this->getThemePath().'/bower_components/jquery/dist/jquery.min.js"></script>');
-        echo('<script src="'.$this->getThemePath().'/bower_components/foundation/js/foundation.min.js');
+        echo('<script src="'.$this->getThemePath().'/bower_components/foundation/js/foundation.min.js"></script>');
         echo('<script src="'.$this->getThemePath().'/js/app.js"></script>');
     }
     ?>
