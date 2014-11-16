@@ -6898,13 +6898,20 @@ textarea {
   font-size: 0.82em;
 }
 
-/* line 1361, ../scss/app.scss */
+@media all and (max-width: 340px) {
+  /* line 1362, ../scss/app.scss */
+  #mtb-news-pagination {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}
+/* line 1368, ../scss/app.scss */
 .numbers {
   padding-left: .25em;
   padding-right: .25em;
 }
 
-/* line 1366, ../scss/app.scss */
+/* line 1373, ../scss/app.scss */
 .slideshow-wrapper {
   border: 4px solid white;
   -moz-box-shadow: 0 0 8px #888888;
@@ -6913,15 +6920,15 @@ textarea {
   box-shadow: 0 0 8px #888888;
   margin-bottom: 2.1em;
 }
-/* line 1370, ../scss/app.scss */
+/* line 1377, ../scss/app.scss */
 .slideshow-wrapper .orbit-container {
   background-color: #fff;
 }
-/* line 1372, ../scss/app.scss */
+/* line 1379, ../scss/app.scss */
 .slideshow-wrapper .orbit-container .orbit-bullets {
   margin: 0 auto 15px auto;
 }
-/* line 1374, ../scss/app.scss */
+/* line 1381, ../scss/app.scss */
 .slideshow-wrapper .orbit-container .orbit-bullets li {
   cursor: pointer;
   display: inline-block;
@@ -6934,8 +6941,13 @@ textarea {
 }
 
 @media all and (max-width: 340px) {
-  /* line 1390, ../scss/app.scss */
-  .orbit-container .orbit-bullets {
+  /* line 1396, ../scss/app.scss */
+  .slideshow-wrapper {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  /* line 1400, ../scss/app.scss */
+  .slideshow-wrapper .orbit-container .orbit-bullets {
     margin: 0 auto 10px auto;
     top: 5px;
   }
