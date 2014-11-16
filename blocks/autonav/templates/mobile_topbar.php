@@ -235,9 +235,9 @@ foreach ($navItems as $ni) {
 
 if($navItemCount > 0)
 {
-	echo '<div class="row"><div class="large-12 columns"><div class="top-bar-container">';
+	echo '<div class="row"><div class="large-12 columns"><div class="top-bar-container show-for-small">';
 	// A little hacky h1 element but will do for now
-	echo '<nav class="top-bar show-for-small"><ul class="title-area"><li class="name"><h1>&nbsp;</h1></li>';
+	echo '<nav class="top-bar" data-topbar role="navigation"><ul class="title-area"><li class="name"><h1>&nbsp;</h1></li>';
 	echo '<li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li></ul>';
 	
 	

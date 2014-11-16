@@ -63,7 +63,7 @@ $this->inc('elements/header.php'); ?>
 					
   				<div class="row">
     			<!-- Main Blog Content -->
-        		<div class="large-9 push-3 columns" role="content">
+        		<div class="medium-9 medium-push-3 columns" role="content">
 	        		<div class="content-container container-separator">
 				      <article>
 				 			<?php  
@@ -75,7 +75,7 @@ $this->inc('elements/header.php'); ?>
     			</div> <!-- End Main Content -->
  
 				<!-- Sidebar -->
-		 		<div class="large-3 pull-9 columns">
+		 		<div class="medium-3 medium-pull-9 columns">
 		 		<div class="container-separator">
 					<div class="sidebar-container">
 						<div class="hide-for-small">
