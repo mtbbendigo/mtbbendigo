@@ -10,6 +10,7 @@
   	<?php //$this->getThemePath() is faster that $this->getStyleSheet('') but getStyleSheet() will not cause css file not found errors. ?>
     <link rel="stylesheet" media="screen, projector, print" type="text/css" href="<?php echo $this->getThemePath()?>/stylesheets/app.css" />
 	<link rel="stylesheet" media="screen" type="text/css" href="<?php echo $this->getThemePath()?>/stylesheets/sticky_footer.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo $this->getThemePath()?>/stylesheets/app.css.map" />
 
     <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
