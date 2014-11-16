@@ -31,30 +31,21 @@
   
 </div>
 
-  <script>
-  document.write('<script src=' +
-  ('__proto__' in {} ? '<?php echo $this->getThemePath() ?>/javascripts/vendor/zepto' : '<?php echo $this->getThemePath() ?>/javascripts/vendor/jquery') +
-  '.js><\/script>')
-  </script>
-  
-  <script src="<?php echo $this->getThemePath() ?>/javascripts/foundation/foundation.js"></script>
-	<script src="<?php echo $this->getThemePath() ?>/javascripts/foundation/foundation.alerts.js"></script>
-	<script src="<?php echo $this->getThemePath() ?>/javascripts/foundation/foundation.clearing.js"></script>
-	<script src="<?php echo $this->getThemePath() ?>/javascripts/foundation/foundation.cookie.js"></script>
-	<script src="<?php echo $this->getThemePath() ?>/javascripts/foundation/foundation.dropdown.js"></script>
-	<script src="<?php echo $this->getThemePath() ?>/javascripts/foundation/foundation.forms.js"></script>
-	<script src="<?php echo $this->getThemePath() ?>/javascripts/foundation/foundation.interchange.js"></script>
-	<script src="<?php echo $this->getThemePath() ?>/javascripts/foundation/foundation.joyride.js"></script>
-	<script src="<?php echo $this->getThemePath() ?>/javascripts/foundation/foundation.magellan.js"></script>
-	<script src="<?php echo $this->getThemePath() ?>/javascripts/foundation/foundation.orbit.js"></script>
-	<script src="<?php echo $this->getThemePath() ?>/javascripts/foundation/foundation.placeholder.js"></script>
-	<script src="<?php echo $this->getThemePath() ?>/javascripts/foundation/foundation.reveal.js"></script>
-	<script src="<?php echo $this->getThemePath() ?>/javascripts/foundation/foundation.section.js"></script>
-	<script src="<?php echo $this->getThemePath() ?>/javascripts/foundation/foundation.tooltips.js"></script>
-	<script src="<?php echo $this->getThemePath() ?>/javascripts/foundation/foundation.topbar.js"></script>
+
+    <script src="<?php echo $this->getThemePath() ?>/javascripts/vendor/jquery.js"></script>
+    <script src="<?php echo $this->getThemePath() ?>/javascripts/foundation/foundation.js"></script>
+    <script src="<?php echo $this->getThemePath() ?>/javascripts/foundation/foundation.orbit.js"></script>
+    <script src="<?php echo $this->getThemePath() ?>/bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="<?php echo $this->getThemePath() ?>/bower_components/foundation/js/foundation.min.js"></script>
+    <script src="<?php echo $this->getThemePath() ?>/js/app.js"></script>
+
 	
 	<script>
-    	$(document).foundation('orbit', {animation_speed: 800, pause_on_hover: false});
+        $(document).foundation({
+            orbit: {
+                animation_speed: 800, pause_on_hover: false
+            }
+        });
   	</script>
 
 <?php  Loader::element('footer_required'); ?>

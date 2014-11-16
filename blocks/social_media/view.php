@@ -1,6 +1,6 @@
 <?php  defined('C5_EXECUTE') or die("Access Denied.");
 ?>
-<div class="social-media-sidebar-conatiner">
+<div class="social-media-sidebar-container">
 <!-- <h2>Social Media</h2>  -->
 <ul class="inline-sc-media-list">
 <?php  if (!empty($field_1_image)): 

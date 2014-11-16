@@ -113,11 +113,11 @@
 			if ($summary->pages > 1){
 				$paginator = $pl->getPagination();
 				echo '<div class="row">';
-				echo '<div class="large-4 columns">';
+				echo '<div class="small-4 columns">';
 				echo '<div class="mtb-pagination-left">&laquo;&nbsp;'.$paginator->getPrevious('Newer Posts').'</div>'; 
-				echo '</div><div class="large-4 columns">';
+				echo '</div><div class="small-4 columns">';
 				echo '<div class="hide-for-small"><div id="pagination-numbers">'.$paginator->getPages().'</div></div>';
-				echo '</div><div class="largae-4 columns">'; 
+				echo '</div><div class="small-4 columns">';
 				echo '<div class="mtb-pagination-right">'.$paginator->getNext('Older Posts').'&nbsp;&raquo;</div></div>';
 				echo '</div>';
 			}

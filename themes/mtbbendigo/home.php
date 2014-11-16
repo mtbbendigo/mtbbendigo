@@ -48,17 +48,17 @@ $this->inc('elements/header.php'); ?>
 					
   				<div class="row">
     			<!-- Main Blog Content -->
-        		<div class="large-9 push-3 columns" role="content">
+        		<div class="medium-9 medium-push-3 columns" role="content">
 	        		<div class="home-content-container container-separator">
-			 			<?php  
+			 			<?php
 							$a = new Area('Main');
 							$a->display($c);
 						?>
 			      	</div>
     			</div> <!-- End Main Content -->
- 
+
 				<!-- Sidebar -->
-		 		<div class="large-3 pull-9 columns">
+		 		<div class="medium-3 medium-pull-9 columns">
 		 		<div class="container-separator">
 					<div class="sidebar-container">
 					<?php 
