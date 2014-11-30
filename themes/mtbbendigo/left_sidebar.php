@@ -57,7 +57,8 @@ $this->inc('elements/header.php'); ?>
 					$nav->controller->displaySubPages = 'all';
 					$nav->controller->displaySubPageLevels = 'all';
 					$nav->controller->displaySubPageLevelsNum = 1;
-					$nav->render('templates/mobile_topbar');
+					//$nav->render('templates/mobile_topbar');
+                    $nav->render('templates/mobile_topbar');
 				?>	
 					
 					

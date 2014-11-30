@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: holly
+ * User: Gareth
  * Date: 16/11/2014
  * Time: 11:53
  */
@@ -232,25 +232,49 @@ foreach ($navItems as $ni) {
  */
 
 //IS THIS HACKY......WHAT WAS I THINKING?
-echo '<nav>';
-$index = 0;
+
+echo '<div class="off-canvas-wrap" data-offcanvas><div class="inner-wrap">';
+echo '<nav class="tab-bar">';
+//Setup Off Canvas top-bar menu and icon.
+echo '<section class="left-small">';
+    echo '<a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>';
+echo '</section>';
+echo '<section class="middle tab-bar-section">';
+echo '<h1 class="title">MENU</h1>';
+echo '</section>';
+echo '</nav>';
+
+echo '<aside class="left-off-canvas-menu">';
+echo '<ul class="off-canvas-list">';
 foreach ($navItems as $ni) {
-    //if($index >= 6)
-    //{
-    //	echo '<div class="row">';
-    $upperCaseStr = strtoupper($ni->name);
-    if($upperCaseStr == 'HOME')
-    {
-        echo '<ul class="inline-list right"><li class="navlink"><a href="'. $ni->url .'">'. $upperCaseStr .'</a></li>';		}
-    else
-    {
-        echo '<li class="navlink"><a href="' . $ni->url . '" target="' . $ni->target . '">' . strtoupper($ni->name) . '</a></li>';
-    }
-    //	$index = $index + 1;
-    //}
+
+    echo '<li><a href="' . $ni->url . '" target="' . $ni->target . '">' . $ni->name . '</a></li>';
+
+
+//    if ($ni->isEnabled) {
+//        echo '<a href="' . $ni->url . '" target="' . $ni->target . '" class="' . $ni->classes . '">' . $ni->name . '</a>';
+//    }
+//    else
+//    {
+//        echo '<span class="' . $ni->classes . '">' . $ni->name . '</span>';
+//    }
+//
+//    if ($ni->hasSubmenu) {
+//        echo '<ul>'; //opens a dropdown sub-menu
+//    }
+//    else
+//    {
+//        echo '</li>'; //closes a nav item
+//        echo str_repeat('</ul></li>', $ni->subDepth); //closes dropdown sub-menu(s) and their top-level nav item(s)
+//    }
+
 }
  echo '</ul>';
- echo '</nav>';
+echo '</aside>';
+
+echo '<a class="exit-off-canvas"></a>';
+echo '</div></div>';
+
 // echo '<ul class="inline-list">'; //opens the top-level menu
 
 // foreach ($navItems as $ni) {
