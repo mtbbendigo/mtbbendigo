@@ -79,11 +79,10 @@ $this->inc('elements/header.php'); ?>
 				</div>
 			</div>
  		</div> <!-- End inner-container -->
+        <div class="middle-bottom-border"></div>
+        <div class="bottom-content-border"></div>
   	</div>
-  	
- 	<div class="middle-bottom-border"></div>
- 	<div class="bottom-content-border"></div>
- 	
+
 </div><!-- End top row -->
 
 <div class="footer-separator"></div>

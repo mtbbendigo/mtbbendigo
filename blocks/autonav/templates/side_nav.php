@@ -244,7 +244,6 @@ if($navItemCount > 0)
 // 	}
 	foreach ($navItems as $ni) 
 	{
-		$index = 0;
 		if($ni->level == 1)
 		{	//Parent
 			echo '<li><a href="' . $ni->url . '" target="' . $ni->target . '" class="menu-item">' . $ni->name . '</a></li>';

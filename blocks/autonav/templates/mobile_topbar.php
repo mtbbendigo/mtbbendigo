@@ -259,11 +259,11 @@ if($navItemCount > 0)
 			if($ni->hasSubmenu) //Parent Page
 			{
 				echo '<li class="has-dropdown">';
-				echo '<a href="' . $ni->url . '" target="' . $ni->target . '" class="' . $ni->classes . '">' . $ni->name . '</a>';
+				echo '<a href="' . $ni->url . '" target="' . $ni->target . '">' . $ni->name . '</a>';
 			}
 			else
 			{	//Child Page
-				echo '<li><a href="' . $ni->url . '" target="' . $ni->target . '" class="' . $ni->classes . '">' . $ni->name . '</a>';
+				echo '<li><a href="' . $ni->url . '" target="' . $ni->target . '">' . $ni->name . '</a>';
 			}
 		}
 		else
@@ -284,7 +284,7 @@ if($navItemCount > 0)
 	
 	echo '</ul>'; //closes the top-level menu
 	echo '</nav>';
-	echo '</div> </div> </div>';
+	echo '</div></div></div>';
 }
       
 
