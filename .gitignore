@@ -9,6 +9,6 @@ error_log
 gte/*
 .htaccess
 mtbbendigo-test/*
-.sass-cache
-.sass-cache/*
+**/.sass-cache/*
 .idea/*
+**/node_modules/*
