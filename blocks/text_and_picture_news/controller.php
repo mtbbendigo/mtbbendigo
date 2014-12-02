@@ -234,4 +234,14 @@ class TextAndPictureNewsBlockController extends BlockController {
 		return $text;
 	}
 
+    public function getSummaryTitle()
+    {
+        return $this->field_1_textbox_text;
+    }
+
+    public function getContentSummary()
+    {
+        return $this->field_2_wysiwyg_content;
+    }
+
 }

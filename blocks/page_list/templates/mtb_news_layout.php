@@ -35,7 +35,7 @@
 			$pageBlocks = $cobj->getBlocks('Main');
 			if (count($pageBlocks) > 0) {
 				foreach ($pageBlocks as $pb) {
-					if ($pb->btHandle == $newsBlockTypes[0] || $pb->btHandle == $newsBlockTypes[1] || $pb->btHandle == $newsBlockTypes[2] || $pb->btHandle == $newsBlockTypes[3] || $pb == $newsBlockTypes[4]) {
+					if ($pb->btHandle == $newsBlockTypes[0] || $pb->btHandle == $newsBlockTypes[1] || $pb->btHandle == $newsBlockTypes[2] || $pb->btHandle == $newsBlockTypes[3] || $pb->btHandle == $newsBlockTypes[4]) {
 						$summaryTitle = 'Oops! Summary Title is missing.';
 // 						if(!empty($pb->getController()->getSummaryTitle()))
 // 						{
