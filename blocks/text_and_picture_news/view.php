@@ -37,12 +37,9 @@ $nh = Loader::helper('navigation');
 							-o-box-shadow: 0 0 8px #888; box-shadow: 0 0 8px #888;"/>
                             <?php  if (!empty($field_4_image_internalLinkCID)) { ?></a><?php  } ?>
                     <?php  endif; ?>
-
                 </div>
             </div>
         </div>
-
-
     <article>
 </div>
 
