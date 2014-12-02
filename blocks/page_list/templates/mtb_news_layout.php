@@ -29,13 +29,13 @@
 	?>
 	
 		<?php 
-			$newsBlockTypes = array('left_text_right_img_news', 'right_text_left_img_news', 'top_img_bttm_content_news', 'full_width_text_news');
+			$newsBlockTypes = array('left_text_right_img_news', 'right_text_left_img_news', 'top_img_bttm_content_news', 'full_width_text_news', 'text_and_picture_news');
 			$excerpt = '';
 			$summaryTitle = '';
 			$pageBlocks = $cobj->getBlocks('Main');
 			if (count($pageBlocks) > 0) {
 				foreach ($pageBlocks as $pb) {
-					if ($pb->btHandle == $newsBlockTypes[0] || $pb->btHandle == $newsBlockTypes[1] || $pb->btHandle == $newsBlockTypes[2] || $pb->btHandle == $newsBlockTypes[3]) {
+					if ($pb->btHandle == $newsBlockTypes[0] || $pb->btHandle == $newsBlockTypes[1] || $pb->btHandle == $newsBlockTypes[2] || $pb->btHandle == $newsBlockTypes[3] || $pb == $newsBlockTypes[4]) {
 						$summaryTitle = 'Oops! Summary Title is missing.';
 // 						if(!empty($pb->getController()->getSummaryTitle()))
 // 						{
