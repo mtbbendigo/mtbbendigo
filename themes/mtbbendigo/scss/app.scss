@@ -943,16 +943,27 @@ textarea {
 .article-image-container {
   float: left;
   margin-bottom: 1.8em;
-  //max-width: 280px;
+  max-width: 280px;
 }
 
 @media all and (max-width: $tiny-screen) {
   .article-image-container {
-    float: left;
     margin-bottom: 1.6em;
     margin-left: 2%;
     margin-right: 2%;
-    //max-width: 165px;
+    max-width: 165px;
+  }
+}
+
+.article-image-container-horizontal {
+  margin-bottom: 1.8em;
+  text-align: center;
+  display: block;
+}
+
+@media all and (max-width: $tiny-screen) {
+  .article-image-container-horizontal {
+    margin-bottom: 1.6em;
   }
 }
 

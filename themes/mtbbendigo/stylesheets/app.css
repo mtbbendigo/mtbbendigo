@@ -1267,9 +1267,12 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
   .news-title-link a:hover { color: #6C654C; border-bottom: 1px solid #848484; } }
 .news-article-title { margin-bottom: 1em; }
 
-.article-image-container { float: left; margin-bottom: 1.8em; }
+.article-image-container { float: left; margin-bottom: 1.8em; max-width: 280px; }
 
-@media all and (max-width: 340px) { .article-image-container { float: left; margin-bottom: 1.6em; margin-left: 2%; margin-right: 2%; } }
+@media all and (max-width: 340px) { .article-image-container { margin-bottom: 1.6em; margin-left: 2%; margin-right: 2%; max-width: 165px; } }
+.article-image-container-horizontal { margin-bottom: 1.8em; text-align: center; display: block; }
+
+@media all and (max-width: 340px) { .article-image-container-horizontal { margin-bottom: 1.6em; } }
 @media all and (max-width: 340px) { .article-item-list { margin-left: 6%; }
   .article-item-list li { list-style-type: none; } }
 @media all and (max-width: 767px) { .article-title { font-size: 22px; color: #35332e; font-family: "Open Sans"; font-weight: normal; }
