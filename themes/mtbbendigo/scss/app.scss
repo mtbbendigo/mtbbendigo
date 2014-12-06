@@ -8,7 +8,7 @@
 //"foundation/components/breadcrumbs",
 //"foundation/components/button-groups",
   "foundation/components/buttons",
-//"foundation/components/clearing",
+"foundation/components/clearing",
 //"foundation/components/dropdown",
 //"foundation/components/dropdown-buttons",
   "foundation/components/flex-video",
@@ -1416,5 +1416,21 @@ textarea {
   }
 }
 
+.clearing-padding {
+  padding-bottom: 1.2em;
+}
 
+@media all and (max-width: $tiny-screen){
+  .clearing-padding {
+    margin-left: 3%;
+  }
+}
+
+
+
+.reveal-modal {
+  left: 0; right: 0; margin: auto;
+  background-size:contain;
+  //margin-left: -40%;
+}
 

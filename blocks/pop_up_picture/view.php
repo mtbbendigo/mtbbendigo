@@ -1,32 +1,15 @@
 <?php  defined('C5_EXECUTE') or die("Access Denied.");
 ?>
 
-<div class="row">
-	<div class="large-5 columns">
-	<?php  if (!empty($field_1_textarea_text)): ?>
-		<?php  echo nl2br(htmlentities($field_1_textarea_text, ENT_QUOTES, APP_CHARSET)); ?>
-	<?php  endif; ?>
-	
-	<?php  if (!empty($field_2_image)): ?>
-		<img src="<?php  echo $field_2_image->src; ?>" width="<?php  echo $field_2_image->width; ?>" height="<?php  echo $field_2_image->height; ?>" alt="" />
-	<?php  endif; ?>
-	</div>
-	
-	<div class="large-7 columns">
-	<?php  if (!empty($field_1_image)): ?>
-		<a href="#pop-up" data-rel="popup" data-position-to="window">
-			<img src="<?php  echo $field_1_image->src; ?>" 
-			width="<?php  echo $field_1_image->width; ?>" 
-			height="<?php  echo $field_1_image->height; ?>" 
-			alt="" data-transition="pop"/>
-		</a>
-		<div id="pop-up" data-role="popup">
-		<a href="#" data-rel="back">Close</a>
-			<img src="<?php  echo $field_1_image->src; ?>" 
-			width="<?php  echo $field_1_image->width; ?>" 
-			height="<?php  echo $field_1_image->height; ?>" 
-			alt="" data-transition="pop"/>
-		</div>
-	<?php  endif; ?>
-	</div>
-</div>
+<?php  if (!empty($field_1_image)): ?>
+    <div class="row">
+        <div class="small-12 columns">
+            <ul class="clearing-thumbs clearing-padding" data-clearing>
+                <li><a href="<?php  echo $field_1_image->src; ?>"><img data-caption="<?php  echo $field_1_image_altText; ?>" src="<?php  echo $field_1_image->src; ?>" style="border: 4px solid white; -moz-box-shadow: 0 0 8px #888; -webkit-box-shadow: 0 0 8px #888;
+                                    -o-box-shadow: 0 0 8px #888; box-shadow: 0 0 8px #888;"></a></li>
+            </ul>
+        </div>
+    </div>
+<?php  endif; ?>
+
+

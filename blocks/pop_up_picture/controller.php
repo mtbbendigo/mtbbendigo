@@ -3,7 +3,7 @@
 class PopUpPictureBlockController extends BlockController {
 	
 	protected $btName = 'Popup Picture';
-	protected $btDescription = 'Enlarges a picture when a user clicks on an image.';
+	protected $btDescription = 'Clicking on the image pops the image up larger onto the screen. Entering text into the alt Text field displays a caption below the image.';
 	protected $btTable = 'btDCPopUpPicture';
 	
 	protected $btInterfaceWidth = "700";
@@ -15,21 +15,18 @@ class PopUpPictureBlockController extends BlockController {
 	protected $btCacheBlockOutputForRegisteredUsers = false;
 	protected $btCacheBlockOutputLifetime = CACHE_LIFETIME;
 	
-	public function getSearchableContent() {
-		return $this->field_1_textarea_text;
-	}
 
 	public function view() {
-		$this->set('field_2_image', (empty($this->field_2_image_fID) ? null : $this->get_image_object($this->field_2_image_fID, 0, 0, false)));
+		$this->set('field_1_image', (empty($this->field_1_image_fID) ? null : $this->get_image_object($this->field_1_image_fID, 0, 0, false)));
 	}
 
 
 	public function edit() {
-		$this->set('field_2_image', (empty($this->field_2_image_fID) ? null : File::getByID($this->field_2_image_fID)));
+		$this->set('field_1_image', (empty($this->field_1_image_fID) ? null : File::getByID($this->field_1_image_fID)));
 	}
 
 	public function save($args) {
-		$args['field_2_image_fID'] = empty($args['field_2_image_fID']) ? 0 : $args['field_2_image_fID'];
+		$args['field_1_image_fID'] = empty($args['field_1_image_fID']) ? 0 : $args['field_1_image_fID'];
 		parent::save($args);
 	}
 
@@ -44,6 +41,7 @@ class PopUpPictureBlockController extends BlockController {
 			$image->src = $file->getRelativePath();
 			$image->width = $file->getAttribute('width');
 			$image->height = $file->getAttribute('height');
+            $image->Id = $fID;
 		} else {
 			//Generate a thumbnail
 			$width = empty($width) ? 9999 : $width;
@@ -51,11 +49,16 @@ class PopUpPictureBlockController extends BlockController {
 			$file = File::getByID($fID);
 			$ih = Loader::helper('image');
 			$image = $ih->getThumbnail($file, $width, $height, $crop);
+            $image->Id = $fID;
 		}
 	
 		return $image;
 	}
 	
-
+    public function getImageId()
+    {
+        $id = (empty($this->field_1_image_fID) ? null : File::getByID($this->field_1_image_fID));
+        return $id;
+    }
 
 }

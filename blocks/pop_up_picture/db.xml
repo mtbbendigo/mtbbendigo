@@ -3,9 +3,8 @@
 	<table name="btDCPopUpPicture">
 		<field name="bID" type="I"><key /><unsigned /></field>
 
-		<field name="field_1_textarea_text" type="X"></field>
-
-		<field name="field_2_image_fID" type="I"></field>
+		<field name="field_1_image_fID" type="I"></field>
+		<field name="field_1_image_altText" type="C" size="255"></field>
 
 
 	</table>

@@ -8,13 +8,15 @@ $al = Loader::helper('concrete/asset_library');
 </style>
 
 <div class="ccm-block-field-group">
-	<h2>Caption</h2>
-	<textarea id="field_1_textarea_text" name="field_1_textarea_text" rows="5" style="width: 95%;"><?php  echo $field_1_textarea_text; ?></textarea>
-</div>
-
-<div class="ccm-block-field-group">
 	<h2>Image</h2>
-	<?php  echo $al->image('field_2_image_fID', 'field_2_image_fID', 'Choose Image', $field_2_image); ?>
+	<?php  echo $al->image('field_1_image_fID', 'field_1_image_fID', 'Choose Image', $field_1_image); ?>
+
+	<table border="0" cellspacing="3" cellpadding="0" style="width: 95%; margin-top: 5px;">
+		<tr>
+			<td align="right" nowrap="nowrap"><label for="field_1_image_altText">Alt Text:</label>&nbsp;</td>
+			<td align="left" style="width: 100%;"><?php  echo $form->text('field_1_image_altText', $field_1_image_altText, array('style' => 'width: 100%;')); ?></td>
+		</tr>
+	</table>
 </div>
 
 
