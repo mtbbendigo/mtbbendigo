@@ -31,24 +31,10 @@
   
 </div>
 
-    <?php $uinfo = new User();
-    if($uinfo->IsLoggedIn())
-    {
-        echo('<script src="'.$this->getThemePath().'/javascripts/foundation/foundation.js"></script>');
-        echo('<script src="'.$this->getThemePath().'/javascripts/foundation/foundation.orbit.js"></script>');
-        echo('<script src="'.$this->getThemePath().'/bower_components/foundation/js/foundation.min.js');
-        echo('<script src="'.$this->getThemePath().'/js/app.js"></script>');
-    }
-    else{
-        echo('<script src="'.$this->getThemePath().'/javascripts/vendor/jquery.js"></script>');
-        echo('<script src="'.$this->getThemePath().'/javascripts/foundation/foundation.js"></script>');
-        echo('<script src="'.$this->getThemePath().'/javascripts/foundation/foundation.orbit.js"></script>');
-		echo('<script src="'.$this->getThemePath().'javascripts/foundation/foundation.clearing.js"></script>')
-        echo('<script src="'.$this->getThemePath().'/bower_components/jquery/dist/jquery.min.js"></script>');
-        echo('<script src="'.$this->getThemePath().'/bower_components/foundation/js/foundation.min.js"></script>');
-        echo('<script src="'.$this->getThemePath().'/js/app.js"></script>');
-    }
-    ?>
+    <script src="<?php echo $this->getThemePath()?>/bower_components/jquery/dist/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="<?php echo $this->getThemePath()?>/bower_components/fastclick/lib/fastclick.js"></script>
+    <script src="<?php echo $this->getThemePath()?>/bower_components/foundation/js/foundation.min.js"></script>
+
 	<script>
         $(document).foundation({
             orbit: {
