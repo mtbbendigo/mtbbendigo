@@ -31,8 +31,8 @@
   
 </div>
 
-    <script src="<?php echo $this->getThemePath()?>/bower_components/jquery/dist/bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="<?php echo $this->getThemePath()?>/bower_components/fastclick/lib/fastclick.js"></script>
+    <script src="<?php echo $this->getThemePath()?>/bower_components/foundation/js/vendor/jquery.js"></script>
+    <script src="<?php echo $this->getThemePath()?>/bower_components/foundation/js/vendor/fastclick.js"></script>
     <script src="<?php echo $this->getThemePath()?>/bower_components/foundation/js/foundation.min.js"></script>
 
 	<script>

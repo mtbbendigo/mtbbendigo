@@ -24,7 +24,7 @@
 	   		We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 	</style>
 
-    <script src="<?php echo $this->getThemePath() ?>/bower_components/modernizr/modernizr.js"></script>
+    <script src="<?php echo $this->getThemePath() ?>/bower_components/foundation/js/vendor/modernizr.js"></script>
 
 
 </head>
