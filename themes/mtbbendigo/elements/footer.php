@@ -31,7 +31,14 @@
   
 </div>
 
-    <script src="<?php echo $this->getThemePath()?>/bower_components/foundation/js/vendor/jquery.js"></script>
+    <?php
+        $uinfo = new User();
+        if(!$uinfo->IsLoggedIn()){
+            echo('<script src="'.$this->getThemePath().'/bower_components/foundation/js/vendor/jquery.js"></script>');
+        }
+    ?>
+
+
     <script src="<?php echo $this->getThemePath()?>/bower_components/foundation/js/vendor/fastclick.js"></script>
     <script src="<?php echo $this->getThemePath()?>/bower_components/foundation/js/foundation.min.js"></script>
 
