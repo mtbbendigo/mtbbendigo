@@ -4,7 +4,7 @@ $nh = Loader::helper('navigation');
 <div class="article-container">
     <article>
         <div class="row">
-            <div class="large-12 columns">
+            <div class="small-12 large-12 columns">
                 <div class="news-article-title">
                     <h5>
                      <?php  if (!empty($field_1_textbox_text)): ?>
@@ -15,7 +15,7 @@ $nh = Loader::helper('navigation');
             </div>
         </div>
         <div class="row">
-            <div class="large-4 columns">
+            <div class="medium-4 large-4 columns">
                 <div class="article-image-container">
                     <?php  if (!empty($field_3_image)): ?>
                         <?php  if (!empty($field_3_image_externalLinkURL)) { ?><a href="<?php  echo $this->controller->valid_url($field_3_image_externalLinkURL); ?>" target="_blank"><?php  } ?><img src="<?php  echo $field_3_image->src; ?>" width="<?php  echo $field_3_image->width; ?>" height="<?php  echo $field_3_image->height; ?>" alt="" style="border: 4px solid white; -moz-box-shadow: 0 0 8px #888; -webkit-box-shadow: 0 0 8px #888;
@@ -30,7 +30,7 @@ $nh = Loader::helper('navigation');
                     <?php  endif; ?>
                 </div>
             </div>
-            <div class="large-8 columns">
+            <div class="medium-8 large-8 columns">
                 <div class="article-item-text">
                     <?php  if (!empty($field_2_wysiwyg_content)): ?>
                         <?php  echo $field_2_wysiwyg_content; ?>
