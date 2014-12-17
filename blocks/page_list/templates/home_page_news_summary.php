@@ -1,4 +1,4 @@
-<?php 
+<?php
 /************************************************************
  * DESIGNERS: SCROLL DOWN! (IGNORE ALL THIS STUFF AT THE TOP)
  ************************************************************/
@@ -40,13 +40,13 @@ if ($paginate && $num > 0 && is_object($pl)) {
 
 	<?php foreach ($pages as $page):
 	echo '<div class="newsEntry">';
-	
+
 		// Prepare data for each page being listed...
 		$title = $th->entities($page->getCollectionName());
 		$url = $nh->getLinkToCollection($page);
 		$target = ($page->getCollectionPointerExternalLink() != '' && $page->openCollectionPointerExternalLinkInNewWindow()) ? '_blank' : $page->getAttribute('nav_target');
 		$target = empty($target) ? '_self' : $target;
-		
+
 		$description = $page->getCollectionDescription();
 		if ($controller->truncateSummaries) {
 			//$description = $th->shorten($description, $controller->truncateChars); //Concrete5.4.2.1 and lower
@@ -135,30 +135,30 @@ if ($paginate && $num > 0 && is_object($pl)) {
 
 
 
-		/*** Here comes the most important part of the template! The html from here down to the "endforeach" line is repeated for each page in the list... */ 
+		/*** Here comes the most important part of the template! The html from here down to the "endforeach" line is repeated for each page in the list... */
 		?>
 		<?php echo '<div class="newsEntryTitle">';?>
 		<h2>
-			<a href="<?php echo $url ?>" target="<?php echo $target ?>"><?php echo $title ?></a>			
+			<a href="<?php echo $url ?>" target="<?php echo $target ?>"><?php echo $title ?></a>
 		</h2>
 		<?php echo '</div>';?>
-		
+
 			<?php echo '<div class="newsDescription">'.$description ?>
-		
-		
-		  <?php 
+
+
+		  <?php
 		  /* HOW TO DISPLAY ACTUAL PAGE CONTENT: Display an entire area:	  */
 	      $a = new Area('Add News Item'); //change 'Main' to the name of the area you want to display
 	      $a->disableControls();
 	      $a->display($page);
 	      echo '</div>';
 	      ?>
-	      
+
 	      <?php echo ("<div class='authorDetails'>Authored by: $author on $date</div>");?>
 	      <?php echo ("<hr />")?>
 		<?php echo '</div>';?>
 	<?php endforeach; ?>
- 
+
 <?php /* The rest of the template is for the RSS icon and pagination links, which generally don't need to be changed. */ ?>
 
 	<?php if ($showRss): ?>
@@ -167,7 +167,7 @@ if ($paginate && $num > 0 && is_object($pl)) {
 		</div>
 		<?php echo $rssInvisibleLink ?>
 	<?php endif; ?>
- 
+
 <!-- </div> --><!-- End large Columns -->
 <!-- </div> --><!-- Row -->
 

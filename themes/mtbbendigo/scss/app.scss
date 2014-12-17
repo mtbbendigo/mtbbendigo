@@ -475,6 +475,10 @@ a:hover {
   text-decoration: none;
 }
 
+a:focus {
+  color: $nav;
+}
+
 .bxslider {
   @include box-shadow(0, 0, 8px, #888);
 }
@@ -1426,11 +1430,30 @@ textarea {
   }
 }
 
-
-
 .reveal-modal {
   left: 0; right: 0; margin: auto;
   background-size:contain;
   //margin-left: -40%;
+}
+
+.rss-container{
+  padding-bottom: .3em;
+}
+
+@media all and (max-width: $tiny-screen) {
+  .rss-container {
+    margin-left: $mobile-padding-left;
+    margin-right: $mobile-padding-right;
+  }
+}
+
+#rss{
+  margin-top: .3em;
+  a{font-size: .8em;}
+  float: right;
+}
+
+@media all and (max-width: $small-screen){
+  #rss{float: left;}
 }
 

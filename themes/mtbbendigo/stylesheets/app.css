@@ -1211,6 +1211,8 @@ a { text-decoration: none; color: #ac9b5b; }
 
 a:hover { color: #424242; text-decoration: none; }
 
+a:focus { color: #424242; }
+
 .bxslider { -moz-box-shadow: 0 0 8px #888888; -webkit-box-shadow: 0 0 8px #888888; -o-box-shadow: 0 0 8px #888888; box-shadow: 0 0 8px #888888; }
 
 .inner-container-border { border: 8px solid #AC9B5B; -moz-box-shadow: 0 -4px 20px #222222; -webkit-box-shadow: 0 -4px 20px #222222; -o-box-shadow: 0 -4px 20px #222222; box-shadow: 0 -4px 20px #222222; }
@@ -1420,5 +1422,13 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 
 @media all and (max-width: 340px) { .clearing-padding { margin-left: 3%; } }
 .reveal-modal { left: 0; right: 0; margin: auto; background-size: contain; }
+
+.rss-container { padding-bottom: .3em; }
+
+@media all and (max-width: 340px) { .rss-container { margin-left: 6%; margin-right: 6%; } }
+#rss { margin-top: .3em; float: right; }
+#rss a { font-size: .8em; }
+
+@media all and (max-width: 640px) { #rss { float: left; } }
 
 /*# sourceMappingURL=app.css.map */

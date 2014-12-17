@@ -3,6 +3,33 @@
 	$th = Loader::helper('text');
 ?>
 
+<?php  if(!$previewMode && $controller->rss):
+    $btID = $b->getBlockTypeID();
+    $bt = BlockType::getByID($btID);
+    $uh = Loader::helper('concrete/urls');
+    $rssUrl = $controller->getRssUrl($b, 'blog_rss');
+    $rssIcon = $uh->getBlockTypeAssetsURL($bt, 'rss.png');
+    $rssTitle = $controller->rssTitle;
+    ?>
+
+<?php  endif; ?>
+<div class="rss-container">
+    <div class="row">
+        <div class=" medium-7 columns">
+            <h3>Latest News</h3>
+        </div>
+        <div class=" medium-5 columns">
+            <div id="rss">
+                <a href="<?php  echo $rssUrl; ?>" target="_blank"><?php  echo t('Subscribe to RSS Feed')?></a>
+                <a href="<?php  echo $rssUrl; ?>" target="_blank"><img src="<?php  echo $rssIcon; ?>" width="14" height="14" alt="<?php  echo t('RSS Icon')?>" title="<?php  echo t('RSS Feed')?>" /></a>
+            </div>
+
+        </div>
+    </div>
+    <link href="<?php  echo BASE_URL.$rssUrl; ?>" rel="alternate" type="application/rss+xml" title="<?php  echo $rssTitle; ?>" />
+</div>
+<div class="news-article-divider"></div>
+
 	<?php 
 	$index = 0; 
 	$isFirst = true; //So first item in list can have a different css class (e.g. no top border)
@@ -89,21 +116,6 @@
 
 
 <div id="blog-index-foot">
-	<?php  if(!$previewMode && $controller->rss):
-		$btID = $b->getBlockTypeID();
-		$bt = BlockType::getByID($btID);
-		$uh = Loader::helper('concrete/urls');
-		$rssUrl = $controller->getRssUrl($b, 'blog_rss');
-		$rssIcon = $uh->getBlockTypeAssetsURL($bt, 'rss.png');
-		$rssTitle = $controller->rssTitle;
-	?>
-		<div id="rss">
-			<a href="<?php  echo $rssUrl; ?>" target="_blank"><?php  echo t('Subscribe to RSS Feed')?></a>
-			<a href="<?php  echo $rssUrl; ?>" target="_blank"><img src="<?php  echo $rssIcon; ?>" width="14" height="14" alt="<?php  echo t('RSS Icon')?>" title="<?php  echo t('RSS Feed')?>" /></a>
-		</div>
-		<link href="<?php  echo BASE_URL.$rssUrl; ?>" rel="alternate" type="application/rss+xml" title="<?php  echo $rssTitle; ?>" />
-	<?php  endif; ?>
-	
 
 	<?php  if ($paginate && $num > 0 && is_object($pl)): 
 		echo '<br/><div class="news-article-divider"></div>'; ?>
