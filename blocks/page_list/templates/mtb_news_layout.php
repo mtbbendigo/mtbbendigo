@@ -20,8 +20,14 @@
         </div>
         <div class=" medium-5 columns">
             <div id="rss">
-                <?php //echo ('<a href="'.$rssUrl.'" target="blank">'.t('Subscribe to RSS Feed').'</a>'); ?>
-                <?php //echo ('<a href="'.$rssUrl.'" target="_blank"><img src="'.$rssIcon.'" width="14" height="14" alt="'.t('RSS Icon').'" title="'.t('RSS Feed').'"></a>'); ?>
+                <?php
+                    if(!empty($rssIcon))
+                    {
+                        echo ('<a href="'.$rssUrl.'" target="blank">'.t('Subscribe to RSS Feed').'</a>&nbsp;');
+                        echo ('<a href="'.$rssUrl.'" target="_blank"><img src="'.$rssIcon.'" width="14" height="14" alt="'.t('RSS Icon').'" title="'.t('RSS Feed').'"></a>');
+                    }
+                ?>
+
             </div>
 
         </div>
