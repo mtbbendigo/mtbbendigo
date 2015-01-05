@@ -12,3 +12,4 @@ mtbbendigo-test/*
 **/.sass-cache/*
 .idea/*
 **/node_modules/*
+gte-test/*
