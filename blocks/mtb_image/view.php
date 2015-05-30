@@ -8,5 +8,6 @@
 				style="border: 4px solid white; -moz-box-shadow: 0 0 8px #888; -webkit-box-shadow: 0 0 8px #888; -o-box-shadow: 0 0 8px #888; box-shadow: 0 0 8px #888;"/>
 		<?php  if (!empty($field_1_image_externalLinkURL)) { ?></a><?php  } ?>
 <?php  endif; ?>
+<br/><br/>
 
 
