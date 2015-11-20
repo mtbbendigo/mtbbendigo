@@ -15,7 +15,7 @@
 			<div class="response" id="mce-success-response" style="display:none"></div>
 		</div>	
 		<div class="clear">
-			<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="margin-left: 0;">
+			<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="margin-left: 0;width: 140px;">
 		</div>
 	</form>
 </div>
