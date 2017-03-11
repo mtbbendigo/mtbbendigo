@@ -2,41 +2,41 @@
 //@import "foundation";
 // Or selectively include components
 @import
-//"foundation/components/accordion",
-//"foundation/components/alert-boxes",
-  "foundation/components/block-grid",
-//"foundation/components/breadcrumbs",
-//"foundation/components/button-groups",
-  "foundation/components/buttons",
+  //"foundation/components/accordion",
+  //"foundation/components/alert-boxes",
+"foundation/components/block-grid",
+  //"foundation/components/breadcrumbs",
+  //"foundation/components/button-groups",
+"foundation/components/buttons",
 "foundation/components/clearing",
-//"foundation/components/dropdown",
-//"foundation/components/dropdown-buttons",
-  "foundation/components/flex-video",
-  "foundation/components/forms",
-  "foundation/components/grid",
-  "foundation/components/inline-lists",
-//"foundation/components/joyride",
-//"foundation/components/keystrokes",
-  "foundation/components/labels",
-//"foundation/components/magellan",
-  "foundation/components/orbit",
-  "foundation/components/pagination",
-//"foundation/components/panels",
-//"foundation/components/pricing-tables",
-//"foundation/components/progress-bars",
-//"foundation/components/reveal",
-  "foundation/components/side-nav",
-//"foundation/components/split-buttons",
-//"foundation/components/sub-nav",
-//"foundation/components/switches",
-  "foundation/components/tables",
-//"foundation/components/tabs",
-//"foundation/components/thumbs",
-//"foundation/components/tooltips",
-  "foundation/components/top-bar",
-  "foundation/components/type",
-  "foundation/components/offcanvas",
-  "foundation/components/visibility";
+  //"foundation/components/dropdown",
+  //"foundation/components/dropdown-buttons",
+"foundation/components/flex-video",
+"foundation/components/forms",
+"foundation/components/grid",
+"foundation/components/inline-lists",
+  //"foundation/components/joyride",
+  //"foundation/components/keystrokes",
+"foundation/components/labels",
+  //"foundation/components/magellan",
+"foundation/components/orbit",
+"foundation/components/pagination",
+  //"foundation/components/panels",
+  //"foundation/components/pricing-tables",
+  //"foundation/components/progress-bars",
+  //"foundation/components/reveal",
+"foundation/components/side-nav",
+  //"foundation/components/split-buttons",
+  //"foundation/components/sub-nav",
+  //"foundation/components/switches",
+"foundation/components/tables",
+  //"foundation/components/tabs",
+  //"foundation/components/thumbs",
+  //"foundation/components/tooltips",
+"foundation/components/top-bar",
+"foundation/components/type",
+"foundation/components/offcanvas",
+"foundation/components/visibility";
 
 //Some kinda funky namespace work around. Maybe remove after foundation v5+
 .foundation-data-attribute-namespace {
@@ -74,6 +74,7 @@ $h1-padding: .65em;
 
 $H-fonts: Oswald, 'Fjalla One', tahoma;
 $h-color: #424242;
+$color-default: #333;
 
 $heading-font: 'Open Sans', tahoma, verdana, Arial;
 $inner-bg-color: #F1F1F1;
@@ -306,30 +307,10 @@ h6 {
   font-family: 'Oswald';
 }
 
-.top-bar-section ul li > a {
-  font-family: 'Oswald';
-  background-color: $inner-bg-color;
-  color: #705F1E;
-  padding: 0 0;
-}
-
 .top-bar.expanded .toggle-topbar > a span {
   color: #705F1E;
   -webkit-box-shadow: 0 10px 0 1px $inner-bg-color, 0 16px 0 1px $inner-bg-color, 0 22px 0 1px $inner-bg-color;
   box-shadow: 0 10px 0 1px $inner-bg-color, 0 16px 0 1px $inner-bg-color, 0 22px 0 1px $inner-bg-color;
-}
-
-.top-bar-section .dropdown li.title h5 a {
-  color: $nav-hover;
-  font-weight: normal;
-}
-
-.top-bar-section .dropdown li.title h5 a {
-  font-size: 0.8125rem;
-}
-
-.top-bar-section .divider, .top-bar-section [role="separator"] {
-  border-top: solid 1px whitesmoke;
 }
 
 .top-bar-container {
@@ -346,53 +327,104 @@ h6 {
   }
 }
 
-.top-bar-section .dropdown li a {
-  font-weight: normal;
-  padding: 5px 9px;
-  font-weight: normal;
+.top-bar-section {
+  position: relative;
+  width: auto;
+
+  ul {
+    width: 100%;
+    height: auto;
+    display: block;
+    background: #6C654C;
+    margin: 0;
+  }
+
+  .divider,
+  [role="separator"] {
+    border-top: whitesmoke;
+    clear: both;
+    height: 1px;
+    width: 100%;
+    background: whitesmoke;
+  }
+
+  ul li {
+    & > a {
+      font-family: 'Oswald';
+
+      display: block;
+      width: 100%;
+      color: $color-default;
+      padding: 5px 0 5px 10px;
+      background: #c7bb80;
+    }
+
+    // Apply the hover link color when it has that class
+    &:hover > a {
+      background: #424242;
+      font-weight: normal;
+      color: whitesmoke;
+
+    }
+
+    // Apply the active link color when it has that class
+    &.active > a {
+      background: #c7bb80;
+      font-weight: normal;
+      color: $color-default;
+      &:hover {
+        background: #424242;
+        font-weight: normal;
+        color: whitesmoke;
+      }
+    }
+  }
+
+  .dropdown{
+    position: absolute;
+    top: 0;
+    display: none;
+    z-index: 99;
+
+    .divider,
+    [role="separator"] {
+      border-top: whitesmoke;
+      clear: both;
+      height: 1px;
+      width: 100%;
+      background: whitesmoke;
+    }
+
+    li {
+      width: 100%;
+      height: auto;
+
+      a {
+        font-weight: normal;
+        &.parent-link {
+          font-weight: normal;
+        }
+      }
+
+      &.title h5 { margin-bottom: 0;
+        a {
+          background: #c7bb80;
+          color: $color-default;
+          display: block;
+          &:hover{
+            background: #424242;
+            font-weight: normal;
+            color: whitesmoke;
+          }
+        }
+      }
+    }
+  }
 }
 
-//.top-bar-section {
-//  .divider {
-//    border-bottom: solid 1px #d6ca9e;
-//    border-top: solid 1px #f5f5f5;
-//  }
-//  ul {
-//    li {
-//      font-family: 'Oswald';
-//
-//      a {
-//        color: #424242;
-//        padding: 5px 0 5px 10px;
-//        background: #c7bb80;
-//      }
-//      a:active {
-//        letter-spacing: 1px;
-//        color: #424242; //#000;
-//        border-style: none;
-//        background: #c7bb80; //#d6ca9e;
-//      }
-//      a:hover {
-//        background: #c7bb80;
-//        color: whitesmoke;
-//      }
-//      //#6C654C;}
-//    }
-//  }
-//  .dropdown {
-//    li.title h5 a {
-//      font-size: 1.125em;
-//      padding: 10px 0px 10px 8px;
-//      border-bottom: solid 1px #f5f5f5;
-//    }
-//  }
-//}
-
 .title-wrapper {
-  //clear: both;
   #title {
-    //line-height: 1;
-    margin-left: 3%; //20px;
+    margin-left: 3%;
     margin-top: 20px;
     margin-bottom: 15px;
     h1 {
@@ -406,10 +438,8 @@ h6 {
 
 @media all and (max-width: $tiny-screen) {
   .title-wrapper {
-    //clear: both;
     #title {
-      //line-height: 1;
-      margin-left: 3%; //20px;
+      margin-left: 3%;
       margin-top: 18px;
       margin-bottom: 12px;
       h1 {
@@ -466,12 +496,11 @@ h6 {
 
 a {
   text-decoration: none;
-  color: $nav-hover; //$nav-a;
+  color: $nav-hover;
 }
 
 a:hover {
   color: $nav;
-  //border-bottom:1px solid;
   text-decoration: none;
 }
 
@@ -687,7 +716,6 @@ hr {
   border: solid #00423D;
   border-width: 1px 0 0;
   clear: both;
-  //margin: 0 0 0 1em;
   height: 0;
 }
 
@@ -1331,28 +1359,6 @@ textarea {
     margin-left: $mobile-left-margin;
     margin-right: $mobile-right-margin;
   }
-}
-
-.top-bar-section .dropdown li.title h5 a {
-  color: #424242;
-  font-weight: bold;
-}
-
-.top-bar-section ul li a {
-  //font-family: 'Open Sans';
-  color: #424242;
-  padding: 5px 0 5px 10px;
-  background: #c7bb80;
-}
-
-.top-bar-section .dropdown li a {
-  font-weight: bold;
-}
-
-.top-bar-section ul li a:hover {
-  background: #b8a86d;
-  color: #4F3604;
-  font-weight: bold;
 }
 
 #mtb-news-pagination {
